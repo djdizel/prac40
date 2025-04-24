@@ -13,15 +13,15 @@ namespace ConsoleApp5
         /// 1) объявляем делегат
         /// </summary>
         delegate void ShowText();
-        static void Hello() { Console.WriteLine("Привет"); }
-        static void Bye() { Console.WriteLine("пoка"); }
+        static void GoodMorning() { Console.WriteLine("Доброе утро!"); }
+        static void GoodEvening() { Console.WriteLine("Добрый вечер!"); }
         static void Main(string[] args)
         {
             //2) создание объекта делегата
             ShowText show;
-            ShowText show2 = Bye;
+            ShowText show2 = GoodEvening;
             //3) связываем с методом Hello
-            show = Hello;
+            show = GoodMorning;
             // 4) вызов метода
             show();
             show2();
