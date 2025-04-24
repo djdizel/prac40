@@ -18,13 +18,16 @@ namespace ConsoleApp5
         static void Main(string[] args)
         {
             //2) создание объекта делегата
-            ShowText show;
+            ShowText show = Hello;
             ShowText show2 = Bye;
-            //3) связываем с методом Hello
-            show = Hello;
-            // 4) вызов метода
-            show();
-            show2();
+            if (DateTime.Now.Hour <= 12)
+            {
+                show();
+            }
+            else
+            {
+                show2();
+            }
         }
     }
 }
