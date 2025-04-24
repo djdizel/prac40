@@ -9,23 +9,15 @@ namespace ConsoleApp5
 {
     internal class Program
     {
-        /// <summary>
-        /// 1) объявляем делегат
-        /// </summary>
-        delegate void ShowText();
+        delegate double Operation(int x, int y);
         static void Main(string[] args)
         {
-            //2) создание объекта делегата
-            ShowText show = Hello.Hello1;
-            ShowText show2 = Bye.Bye1;
-            if (DateTime.Now.Hour <= 12)
-            {
-                show();
-            }
-            else
-            {
-                show2();
-            }
+            Console.WriteLine("введите первое число");
+            int m = int.Parse(Console.ReadLine());
+            Console.WriteLine("введите первое число");
+            int n = int.Parse(Console.ReadLine());
+            Operation del = Average.Average1;
+            Console.WriteLine(del.Invoke(m, n));
         }
     }
 }
