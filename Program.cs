@@ -13,13 +13,11 @@ namespace ConsoleApp5
         /// 1) объявляем делегат
         /// </summary>
         delegate void ShowText();
-        static void Hello() { Console.WriteLine("Доброе утро!"); }
-        static void Bye() { Console.WriteLine("Добрый день!"); }
         static void Main(string[] args)
         {
             //2) создание объекта делегата
-            ShowText show = Hello;
-            ShowText show2 = Bye;
+            ShowText show = Hello.Hello1;
+            ShowText show2 = Bye.Bye1;
             if (DateTime.Now.Hour <= 12)
             {
                 show();
