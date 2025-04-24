@@ -13,8 +13,8 @@ namespace ConsoleApp5
         /// 1) объявляем делегат
         /// </summary>
         delegate void ShowText();
-        static void Hello() { Console.WriteLine("Привет"); }
-        static void Bye() { Console.WriteLine("пoка"); }
+        static void Hello() { Console.WriteLine("Доброе утро!"); }
+        static void Bye() { Console.WriteLine("Добрый день!"); }
         static void Main(string[] args)
         {
             //2) создание объекта делегата
