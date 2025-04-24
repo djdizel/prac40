@@ -8,13 +8,9 @@ using System.Threading.Tasks;
 namespace ConsoleApp5
 {
     internal class Program
-    {
-        /// <summary>
-        /// 1) объявляем делегат
-        /// </summary>
-        delegate void ShowText();
-        static void Hello() { Console.WriteLine("Привет"); }
-        static void Bye() { Console.WriteLine("пoка"); }
+    { 
+        delegate void Sum
+
         static void Main(string[] args)
         {
             //2) создание объекта делегата
